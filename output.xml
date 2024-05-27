@@ -1,142 +1,1118 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-27T11:27:48.585794" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-27T11:43:07.653472" rpa="false" schemaversion="5">
 <suite id="s1" name="Final Project" source="D:\final_project">
 <suite id="s1-s1" name="TestCases" source="D:\final_project\TestCases">
 <suite id="s1-s1-s1" name="Test Computers" source="D:\final_project\TestCases\Test_Computers.robot">
 <test id="s1-s1-s1-t1" name="Select the Desktops from computers" line="11">
-<kw name="open the browser" type="SETUP">
-<msg time="2024-05-27T11:27:49.108107" level="FAIL">No keyword with name 'open the browser' found. Did you mean:
-    SeleniumLibrary.Open Browser</msg>
-<status status="FAIL" start="2024-05-27T11:27:49.108107" elapsed="0.000000">No keyword with name 'open the browser' found. Did you mean:
-    SeleniumLibrary.Open Browser</status>
+<kw name="Open the Browser with url" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:43:09.636450" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-27T11:43:09.635429" elapsed="9.051762"/>
 </kw>
-<kw name="Close Browser Session" type="TEARDOWN">
-<msg time="2024-05-27T11:27:49.110115" level="FAIL">No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</msg>
-<status status="FAIL" start="2024-05-27T11:27:49.110115" elapsed="0.000000">No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:43:18.689326" level="INFO">Opening url 'https://demowebshop.tricentis.com'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-27T11:43:18.688318" elapsed="3.496751"/>
 </kw>
-<status status="FAIL" start="2024-05-27T11:27:49.105179" elapsed="0.004936">Setup failed:
-No keyword with name 'open the browser' found. Did you mean:
-    SeleniumLibrary.Open Browser
-
-Also teardown failed:
-No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-27T11:43:22.186067" elapsed="0.176572"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-27T11:43:22.363641" elapsed="0.014890"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:43:09.633431" elapsed="12.747089"/>
+</kw>
+<kw name="Click the Desktops option" owner="computer">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:43:22.388546" level="INFO">Clicking link 'css:ul[class='top-menu'] a[href='/computers']'.</msg>
+<arg>${computers}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T11:43:22.383540" elapsed="1.328379"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:43:23.713888" level="INFO">Clicking link 'css:h2[class='title'] a[href='/desktops']'.</msg>
+<arg>${desktops}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T11:43:23.712874" elapsed="1.225689"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:43:22.382539" elapsed="2.556024"/>
+</kw>
+<kw name="Close Browser session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-27T11:43:24.942285" elapsed="2.797689"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:43:24.941225" elapsed="2.798749"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:43:09.630435" elapsed="18.111227"/>
 </test>
-<test id="s1-s1-s1-t2" name="Select the Notebooks from computers" line="14">
-<kw name="open the browser" type="SETUP">
-<msg time="2024-05-27T11:27:49.114117" level="FAIL">No keyword with name 'open the browser' found. Did you mean:
-    SeleniumLibrary.Open Browser</msg>
-<status status="FAIL" start="2024-05-27T11:27:49.113116" elapsed="0.001001">No keyword with name 'open the browser' found. Did you mean:
-    SeleniumLibrary.Open Browser</status>
+<test id="s1-s1-s1-t2" name="Sort by order by for desktop" line="13">
+<kw name="Open the Browser with url" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:43:27.746277" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-27T11:43:27.746277" elapsed="3.077996"/>
 </kw>
-<kw name="Close Browser Session" type="TEARDOWN">
-<msg time="2024-05-27T11:27:49.116116" level="FAIL">No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</msg>
-<status status="FAIL" start="2024-05-27T11:27:49.116116" elapsed="0.000000">No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:43:30.824273" level="INFO">Opening url 'https://demowebshop.tricentis.com'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-27T11:43:30.824273" elapsed="3.724267"/>
 </kw>
-<status status="FAIL" start="2024-05-27T11:27:49.112119" elapsed="0.003997">Setup failed:
-No keyword with name 'open the browser' found. Did you mean:
-    SeleniumLibrary.Open Browser
-
-Also teardown failed:
-No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-27T11:43:34.549488" elapsed="0.400528"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-27T11:43:34.951013" elapsed="0.011512"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:43:27.745259" elapsed="7.217266"/>
+</kw>
+<kw name="Sort item by orderby for desktop" owner="computer">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:43:34.966527" level="INFO">Selecting options from selection list 'id:products-orderby' by value https://demowebshop.tricentis.com/desktops?orderby=5.</msg>
+<msg time="2024-05-27T11:43:40.582171" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-27T11:43:40.582171" level="FAIL">List with locator 'id:products-orderby' not found.</msg>
+<arg>id:products-orderby</arg>
+<arg>https://demowebshop.tricentis.com/desktops?orderby=5</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="FAIL" start="2024-05-27T11:43:34.965511" elapsed="6.289712">List with locator 'id:products-orderby' not found.</status>
+</kw>
+<status status="FAIL" start="2024-05-27T11:43:34.964507" elapsed="6.290716">List with locator 'id:products-orderby' not found.</status>
+</kw>
+<kw name="Close Browser session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-27T11:43:41.257540" elapsed="4.474211"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:43:41.256525" elapsed="4.476233"/>
+</kw>
+<status status="FAIL" start="2024-05-27T11:43:27.744262" elapsed="17.989426">List with locator 'id:products-orderby' not found.</status>
 </test>
-<test id="s1-s1-s1-t3" name="Select the Accessories from computers" line="17">
-<kw name="open the browser" type="SETUP">
-<msg time="2024-05-27T11:27:49.124772" level="FAIL">No keyword with name 'open the browser' found. Did you mean:
-    SeleniumLibrary.Open Browser</msg>
-<status status="FAIL" start="2024-05-27T11:27:49.124772" elapsed="0.000000">No keyword with name 'open the browser' found. Did you mean:
-    SeleniumLibrary.Open Browser</status>
+<test id="s1-s1-s1-t3" name="Sort by pagesize for desktop" line="15">
+<kw name="Open the Browser with url" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:43:45.738715" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-27T11:43:45.738715" elapsed="4.174077"/>
 </kw>
-<kw name="Close Browser Session" type="TEARDOWN">
-<msg time="2024-05-27T11:27:49.127771" level="FAIL">No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</msg>
-<status status="FAIL" start="2024-05-27T11:27:49.127771" elapsed="0.000000">No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:43:49.913789" level="INFO">Opening url 'https://demowebshop.tricentis.com'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-27T11:43:49.913789" elapsed="4.595223"/>
 </kw>
-<status status="FAIL" start="2024-05-27T11:27:49.121118" elapsed="0.006653">Setup failed:
-No keyword with name 'open the browser' found. Did you mean:
-    SeleniumLibrary.Open Browser
-
-Also teardown failed:
-No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-27T11:43:54.510327" elapsed="0.266690"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-27T11:43:54.781043" elapsed="0.005471"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:43:45.737692" elapsed="9.049832"/>
+</kw>
+<kw name="Sort item by pagesize for desktop" owner="computer">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:43:54.793519" level="INFO">Selecting options from selection list 'id:products-pagesize' by value https://demowebshop.tricentis.com/desktops?orderby=5&amp;pagesize=4.</msg>
+<msg time="2024-05-27T11:44:00.409401" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-27T11:44:00.410398" level="FAIL">List with locator 'id:products-pagesize' not found.</msg>
+<arg>id:products-pagesize</arg>
+<arg>https://demowebshop.tricentis.com/desktops?orderby=5&amp;pagesize=4</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="FAIL" start="2024-05-27T11:43:54.792517" elapsed="5.627951">List with locator 'id:products-pagesize' not found.</status>
+</kw>
+<status status="FAIL" start="2024-05-27T11:43:54.791516" elapsed="5.628952">List with locator 'id:products-pagesize' not found.</status>
+</kw>
+<kw name="Close Browser session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-27T11:44:00.423470" elapsed="2.462640"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:44:00.422469" elapsed="2.464546"/>
+</kw>
+<status status="FAIL" start="2024-05-27T11:43:45.735687" elapsed="17.152329">List with locator 'id:products-pagesize' not found.</status>
+</test>
+<test id="s1-s1-s1-t4" name="Sort by viewmode for desktop" line="17">
+<kw name="Open the Browser with url" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:44:02.894091" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-27T11:44:02.893079" elapsed="4.040968"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:44:06.935112" level="INFO">Opening url 'https://demowebshop.tricentis.com'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-27T11:44:06.935112" elapsed="3.577768"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-27T11:44:10.513725" elapsed="0.328436"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-27T11:44:10.842161" elapsed="0.005009"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:44:02.892029" elapsed="7.955141"/>
+</kw>
+<kw name="Sort item by viewmode for desktop" owner="computer">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:44:10.852163" level="INFO">Selecting options from selection list 'id:products-viewmode' by value https://demowebshop.tricentis.com/desktops?orderby=5&amp;pagesize=4&amp;viewmode=grid.</msg>
+<msg time="2024-05-27T11:44:16.468337" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-27T11:44:16.468337" level="FAIL">List with locator 'id:products-viewmode' not found.</msg>
+<arg>id:products-viewmode</arg>
+<arg>https://demowebshop.tricentis.com/desktops?orderby=5&amp;pagesize=4&amp;viewmode=grid</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="FAIL" start="2024-05-27T11:44:10.852163" elapsed="5.617180">List with locator 'id:products-viewmode' not found.</status>
+</kw>
+<status status="FAIL" start="2024-05-27T11:44:10.851160" elapsed="5.618183">List with locator 'id:products-viewmode' not found.</status>
+</kw>
+<kw name="Close Browser session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-27T11:44:16.470335" elapsed="2.337706"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:44:16.470335" elapsed="2.337706"/>
+</kw>
+<status status="FAIL" start="2024-05-27T11:44:02.891018" elapsed="15.918027">List with locator 'id:products-viewmode' not found.</status>
+</test>
+<test id="s1-s1-s1-t5" name="Click the product for desktop" line="19">
+<kw name="Open the Browser with url" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:44:18.814953" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-27T11:44:18.814953" elapsed="2.904273"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:44:21.726253" level="INFO">Opening url 'https://demowebshop.tricentis.com'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-27T11:44:21.725245" elapsed="3.919783"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-27T11:44:25.645028" elapsed="0.251326"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-27T11:44:25.897328" elapsed="0.005006"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:44:18.813955" elapsed="7.088379"/>
+</kw>
+<kw name="Click a product for desktop" owner="computer">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:44:25.905321" level="INFO">Clicking link '//a[normalize-space()='Build your own cheap computer']'.</msg>
+<arg>//a[normalize-space()='Build your own cheap computer']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T11:44:25.904325" elapsed="1.846857"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:44:27.760251" level="INFO">Verifying element 'xpath://div[@class='product-name']//child::h1[normalize-space()='Build your own cheap computer']' contains exact text 'Build your own cheap computer'.</msg>
+<arg>${desktop_assert}</arg>
+<arg>Build your own cheap computer</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-27T11:44:27.756220" elapsed="0.070071"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:44:25.903322" elapsed="1.922969"/>
+</kw>
+<kw name="Close Browser session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-27T11:44:27.833478" elapsed="2.353141"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:44:27.832472" elapsed="2.354147"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:44:18.812945" elapsed="11.374677"/>
+</test>
+<test id="s1-s1-s1-t6" name="Select the Notebooks from computers" line="22">
+<kw name="Open the Browser with url" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:44:30.193142" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-27T11:44:30.191962" elapsed="2.870657"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:44:33.063620" level="INFO">Opening url 'https://demowebshop.tricentis.com'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-27T11:44:33.063620" elapsed="3.236174"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-27T11:44:36.299794" elapsed="0.230700"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-27T11:44:36.530494" elapsed="0.003353"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:44:30.191962" elapsed="6.341885"/>
+</kw>
+<kw name="Click the Notebooks option" owner="computer">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:44:36.535859" level="INFO">Clicking link 'css:ul[class='top-menu'] a[href='/computers']'.</msg>
+<arg>${computers}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T11:44:36.535859" elapsed="1.395685"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:44:37.932545" level="INFO">Clicking link 'css:h2[class='title'] a[href='/notebooks']'.</msg>
+<arg>${Notebooks}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T11:44:37.932545" elapsed="0.909878"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:44:36.534849" elapsed="2.307574"/>
+</kw>
+<kw name="Close Browser session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-27T11:44:38.849430" elapsed="2.441755"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:44:38.847458" elapsed="2.444728"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:44:30.189940" elapsed="11.102246"/>
+</test>
+<test id="s1-s1-s1-t7" name="Sort by order by for desktop" line="24">
+<kw name="Open the Browser with url" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:44:41.304820" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-27T11:44:41.304820" elapsed="3.932996"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:44:45.239811" level="INFO">Opening url 'https://demowebshop.tricentis.com'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-27T11:44:45.238810" elapsed="5.043782"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-27T11:44:50.283609" elapsed="0.237486"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-27T11:44:50.521637" elapsed="0.003018"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:44:41.303821" elapsed="9.220834"/>
+</kw>
+<kw name="Sort item by orderby for Notebooks" owner="computer">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:44:50.526647" level="INFO">Selecting options from selection list 'id:products-orderby' by value https://demowebshop.tricentis.com/notebooks?orderby=10.</msg>
+<msg time="2024-05-27T11:44:56.105673" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-27T11:44:56.107670" level="FAIL">List with locator 'id:products-orderby' not found.</msg>
+<arg>id:products-orderby</arg>
+<arg>https://demowebshop.tricentis.com/notebooks?orderby=10</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="FAIL" start="2024-05-27T11:44:50.526647" elapsed="5.611024">List with locator 'id:products-orderby' not found.</status>
+</kw>
+<status status="FAIL" start="2024-05-27T11:44:50.525656" elapsed="5.613014">List with locator 'id:products-orderby' not found.</status>
+</kw>
+<kw name="Close Browser session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-27T11:44:56.140669" elapsed="2.510084"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:44:56.139669" elapsed="2.512081"/>
+</kw>
+<status status="FAIL" start="2024-05-27T11:44:41.301819" elapsed="17.350938">List with locator 'id:products-orderby' not found.</status>
+</test>
+<test id="s1-s1-s1-t8" name="Sort by pagesize for desktop" line="26">
+<kw name="Open the Browser with url" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:44:58.661153" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-27T11:44:58.661153" elapsed="3.618829"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:45:02.280983" level="INFO">Opening url 'https://demowebshop.tricentis.com'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-27T11:45:02.279982" elapsed="3.821255"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-27T11:45:06.104029" elapsed="0.296278"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-27T11:45:06.401300" elapsed="0.002994"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:44:58.659126" elapsed="7.745168"/>
+</kw>
+<kw name="Sort item by pagesize for Notebooks" owner="computer">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:45:06.406295" level="INFO">Selecting options from selection list 'id:products-pagesize' by value https://demowebshop.tricentis.com/notebooks?orderby=10&amp;pagesize=8.</msg>
+<msg time="2024-05-27T11:45:11.907638" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-27T11:45:11.908600" level="FAIL">List with locator 'id:products-pagesize' not found.</msg>
+<arg>id:products-pagesize</arg>
+<arg>https://demowebshop.tricentis.com/notebooks?orderby=10&amp;pagesize=8</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="FAIL" start="2024-05-27T11:45:06.406295" elapsed="5.503332">List with locator 'id:products-pagesize' not found.</status>
+</kw>
+<status status="FAIL" start="2024-05-27T11:45:06.405294" elapsed="5.507306">List with locator 'id:products-pagesize' not found.</status>
+</kw>
+<kw name="Close Browser session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-27T11:45:11.917640" elapsed="2.388341"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:45:11.915621" elapsed="2.391432"/>
+</kw>
+<status status="FAIL" start="2024-05-27T11:44:58.657750" elapsed="15.653175">List with locator 'id:products-pagesize' not found.</status>
+</test>
+<test id="s1-s1-s1-t9" name="Sort by viewmode for desktop" line="28">
+<kw name="Open the Browser with url" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:45:14.317936" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-27T11:45:14.316935" elapsed="2.931075"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:45:17.249010" level="INFO">Opening url 'https://demowebshop.tricentis.com'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-27T11:45:17.249010" elapsed="3.073095"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-27T11:45:20.323148" elapsed="0.038781"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-27T11:45:20.362925" elapsed="0.002996"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:45:14.316935" elapsed="6.049985"/>
+</kw>
+<kw name="Sort item by viewmode for Notebooks" owner="computer">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:45:20.368920" level="INFO">Selecting options from selection list 'id:products-viewmode' by value https://demowebshop.tricentis.com/notebooks?orderby=10&amp;viewmode=grid.</msg>
+<msg time="2024-05-27T11:45:25.681617" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-27T11:45:25.682659" level="FAIL">List with locator 'id:products-viewmode' not found.</msg>
+<arg>id:products-viewmode</arg>
+<arg>https://demowebshop.tricentis.com/notebooks?orderby=10&amp;viewmode=grid</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="FAIL" start="2024-05-27T11:45:20.367920" elapsed="5.319780">List with locator 'id:products-viewmode' not found.</status>
+</kw>
+<status status="FAIL" start="2024-05-27T11:45:20.367920" elapsed="5.319780">List with locator 'id:products-viewmode' not found.</status>
+</kw>
+<kw name="Close Browser session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-27T11:45:25.690448" elapsed="2.439500"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:45:25.690448" elapsed="2.439500"/>
+</kw>
+<status status="FAIL" start="2024-05-27T11:45:14.314926" elapsed="13.815966">List with locator 'id:products-viewmode' not found.</status>
+</test>
+<test id="s1-s1-s1-t10" name="Click the product for desktop" line="30">
+<kw name="Open the Browser with url" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:45:28.139572" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-27T11:45:28.138572" elapsed="3.027825"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:45:31.167394" level="INFO">Opening url 'https://demowebshop.tricentis.com'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-27T11:45:31.167394" elapsed="4.125218"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-27T11:45:35.292612" elapsed="0.232956"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-27T11:45:35.526657" elapsed="0.006306"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:45:28.137582" elapsed="7.395381"/>
+</kw>
+<kw name="Click a product for Notebooks" owner="computer">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:45:35.543995" level="INFO">Clicking link '//a[normalize-space()='14.1-inch Laptop']'.</msg>
+<arg>//a[normalize-space()='14.1-inch Laptop']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T11:45:35.540061" elapsed="2.448703"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:45:37.991970" level="INFO">Verifying element 'xpath://div[@class='product-name']//child::h1[normalize-space()='14.1-inch Laptop']' contains exact text '14.1-inch Laptop'.</msg>
+<arg>${notebook_assert}</arg>
+<arg>14.1-inch Laptop</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-27T11:45:37.990657" elapsed="0.041530"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:45:35.534973" elapsed="2.498227"/>
+</kw>
+<kw name="Close Browser session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-27T11:45:38.034200" elapsed="2.279209"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:45:38.033200" elapsed="2.281209"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:45:28.135572" elapsed="12.179837"/>
+</test>
+<test id="s1-s1-s1-t11" name="Select the Accessories from computers" line="33">
+<kw name="Open the Browser with url" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:45:40.321510" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-27T11:45:40.321510" elapsed="2.754491"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:45:43.078021" level="INFO">Opening url 'https://demowebshop.tricentis.com'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-27T11:45:43.077005" elapsed="3.430900"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-27T11:45:46.507905" elapsed="0.072288"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-27T11:45:46.580193" elapsed="0.005970"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:45:40.320515" elapsed="6.266647"/>
+</kw>
+<kw name="Click the Accessories option" owner="computer">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:45:46.590163" level="INFO">Clicking link 'css:ul[class='top-menu'] a[href='/computers']'.</msg>
+<arg>${computers}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T11:45:46.589172" elapsed="1.117512"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:45:47.709355" level="INFO">Clicking link 'css:h2[class='title'] a[href='/accessories']'.</msg>
+<arg>${Accessories}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T11:45:47.708326" elapsed="0.906329"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:45:46.588163" elapsed="2.028534"/>
+</kw>
+<kw name="Close Browser session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-27T11:45:48.621771" elapsed="2.319703"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:45:48.619777" elapsed="2.322733"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:45:40.319520" elapsed="10.623974"/>
+</test>
+<test id="s1-s1-s1-t12" name="Sort by order by for desktop" line="35">
+<kw name="Open the Browser with url" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:45:50.953183" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-27T11:45:50.953183" elapsed="2.736277"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:45:53.690471" level="INFO">Opening url 'https://demowebshop.tricentis.com'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-27T11:45:53.689460" elapsed="4.270547"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-27T11:45:57.960007" elapsed="0.205770"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-27T11:45:58.165777" elapsed="0.003997"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:45:50.952173" elapsed="7.217601"/>
+</kw>
+<kw name="Sort item by orderby for Accessories" owner="computer">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:45:58.189164" level="INFO">Selecting options from selection list 'id:products-orderby' by value https://demowebshop.tricentis.com/accessories?orderby=15.</msg>
+<msg time="2024-05-27T11:46:03.847506" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-27T11:46:03.848443" level="FAIL">List with locator 'id:products-orderby' not found.</msg>
+<arg>id:products-orderby</arg>
+<arg>https://demowebshop.tricentis.com/accessories?orderby=15</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="FAIL" start="2024-05-27T11:45:58.187175" elapsed="5.664282">List with locator 'id:products-orderby' not found.</status>
+</kw>
+<status status="FAIL" start="2024-05-27T11:45:58.179130" elapsed="5.673351">List with locator 'id:products-orderby' not found.</status>
+</kw>
+<kw name="Close Browser session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-27T11:46:03.854439" elapsed="2.390938"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:46:03.853438" elapsed="2.393386"/>
+</kw>
+<status status="FAIL" start="2024-05-27T11:45:50.950173" elapsed="15.297681">List with locator 'id:products-orderby' not found.</status>
+</test>
+<test id="s1-s1-s1-t13" name="Sort by pagesize for desktop" line="37">
+<kw name="Open the Browser with url" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:46:06.259091" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-27T11:46:06.258091" elapsed="3.123782"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:46:09.382858" level="INFO">Opening url 'https://demowebshop.tricentis.com'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-27T11:46:09.381873" elapsed="2.742523"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-27T11:46:12.125239" elapsed="0.103056"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-27T11:46:12.228295" elapsed="0.003943"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:46:06.257094" elapsed="5.976139"/>
+</kw>
+<kw name="Sort item by pagesize for Accessories" owner="computer">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:46:12.238227" level="INFO">Selecting options from selection list 'id:products-pagesize' by value https://demowebshop.tricentis.com/accessories?orderby=15&amp;pagesize=8.</msg>
+<msg time="2024-05-27T11:46:17.516460" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-27T11:46:17.517476" level="FAIL">List with locator 'id:products-pagesize' not found.</msg>
+<arg>id:products-pagesize</arg>
+<arg>https://demowebshop.tricentis.com/accessories?orderby=15&amp;pagesize=8</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="FAIL" start="2024-05-27T11:46:12.237239" elapsed="5.282238">List with locator 'id:products-pagesize' not found.</status>
+</kw>
+<status status="FAIL" start="2024-05-27T11:46:12.234230" elapsed="5.286592">List with locator 'id:products-pagesize' not found.</status>
+</kw>
+<kw name="Close Browser session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-27T11:46:17.523304" elapsed="2.496387"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:46:17.522261" elapsed="2.499605"/>
+</kw>
+<status status="FAIL" start="2024-05-27T11:46:06.256067" elapsed="13.766785">List with locator 'id:products-pagesize' not found.</status>
+</test>
+<test id="s1-s1-s1-t14" name="Sort by viewmode for desktop" line="39">
+<kw name="Open the Browser with url" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:46:20.034561" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-27T11:46:20.034561" elapsed="2.670314"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:46:22.706885" level="INFO">Opening url 'https://demowebshop.tricentis.com'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-27T11:46:22.705920" elapsed="3.839865"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-27T11:46:26.545785" elapsed="0.104801"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-27T11:46:26.655667" elapsed="0.005271"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:46:20.032566" elapsed="6.629397"/>
+</kw>
+<kw name="Sort item by viewmode for Accessories" owner="computer">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:46:26.664935" level="INFO">Selecting options from selection list 'id:products-viewmode' by value https://demowebshop.tricentis.com/accessories?orderby=15&amp;viewmode=grid.</msg>
+<msg time="2024-05-27T11:46:31.980618" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-27T11:46:31.984635" level="FAIL">List with locator 'id:products-viewmode' not found.</msg>
+<arg>id:products-viewmode</arg>
+<arg>https://demowebshop.tricentis.com/accessories?orderby=15&amp;viewmode=grid</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="FAIL" start="2024-05-27T11:46:26.664935" elapsed="5.325349">List with locator 'id:products-viewmode' not found.</status>
+</kw>
+<status status="FAIL" start="2024-05-27T11:46:26.663960" elapsed="5.327521">List with locator 'id:products-viewmode' not found.</status>
+</kw>
+<kw name="Close Browser session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-27T11:46:31.993768" elapsed="2.454893"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:46:31.992706" elapsed="2.456982"/>
+</kw>
+<status status="FAIL" start="2024-05-27T11:46:20.029554" elapsed="14.421675">List with locator 'id:products-viewmode' not found.</status>
+</test>
+<test id="s1-s1-s1-t15" name="Click the product for desktop" line="41">
+<kw name="Open the Browser with url" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:46:34.459261" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-27T11:46:34.458261" elapsed="2.671847"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:46:37.132117" level="INFO">Opening url 'https://demowebshop.tricentis.com'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-27T11:46:37.131118" elapsed="3.031421"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-27T11:46:40.164541" elapsed="0.081292"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-27T11:46:40.247760" elapsed="0.009015"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:46:34.457266" elapsed="5.800590"/>
+</kw>
+<kw name="Click a product for Accessories" owner="computer">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:46:40.267757" level="INFO">Clicking link '//a[normalize-space()='TCP Self-Paced Training additional month']'.</msg>
+<msg time="2024-05-27T11:46:45.559717" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-27T11:46:45.560738" level="FAIL">Link with locator '//a[normalize-space()='TCP Self-Paced Training additional month']' not found.</msg>
+<arg>//a[normalize-space()='TCP Self-Paced Training additional month']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="FAIL" start="2024-05-27T11:46:40.266760" elapsed="5.328146">Link with locator '//a[normalize-space()='TCP Self-Paced Training additional month']' not found.</status>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<arg>${Accessories_assert}</arg>
+<arg>TCP Self-Paced Training additional month</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="NOT RUN" start="2024-05-27T11:46:45.595914" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-05-27T11:46:40.265769" elapsed="5.331144">Link with locator '//a[normalize-space()='TCP Self-Paced Training additional month']' not found.</status>
+</kw>
+<kw name="Close Browser session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-27T11:46:45.598928" elapsed="2.415422"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:46:45.597921" elapsed="2.417435"/>
+</kw>
+<status status="FAIL" start="2024-05-27T11:46:34.456260" elapsed="13.559096">Link with locator '//a[normalize-space()='TCP Self-Paced Training additional month']' not found.</status>
 </test>
 <doc>Tests to validate Computer dropdowns</doc>
-<status status="FAIL" start="2024-05-27T11:27:48.622083" elapsed="0.509692"/>
+<status status="FAIL" start="2024-05-27T11:43:08.032357" elapsed="219.995760"/>
 </suite>
 <suite id="s1-s1-s2" name="Test Computerservice" source="D:\final_project\TestCases\Test_Computerservice.robot">
 <test id="s1-s1-s2-t1" name="Validate Search Field" line="12">
-<kw name="Open the Browser" type="SETUP">
-<msg time="2024-05-27T11:27:49.175858" level="FAIL">No keyword with name 'Open the Browser' found. Did you mean:
-    SeleniumLibrary.Open Browser</msg>
-<status status="FAIL" start="2024-05-27T11:27:49.175858" elapsed="0.000000">No keyword with name 'Open the Browser' found. Did you mean:
-    SeleniumLibrary.Open Browser</status>
+<kw name="Open the Browser with url" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:46:48.151765" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-27T11:46:48.151765" elapsed="2.771293"/>
 </kw>
-<kw name="Close Browser Session" type="TEARDOWN">
-<msg time="2024-05-27T11:27:49.182783" level="FAIL">No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</msg>
-<status status="FAIL" start="2024-05-27T11:27:49.182783" elapsed="0.001003">No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:46:50.924042" level="INFO">Opening url 'https://demowebshop.tricentis.com'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-27T11:46:50.924042" elapsed="3.937353"/>
 </kw>
-<status status="FAIL" start="2024-05-27T11:27:49.172773" elapsed="0.014039">Setup failed:
-No keyword with name 'Open the Browser' found. Did you mean:
-    SeleniumLibrary.Open Browser
-
-Also teardown failed:
-No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-27T11:46:54.861395" elapsed="0.330063"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-27T11:46:55.192460" elapsed="0.005048"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:46:48.150759" elapsed="7.047699"/>
+</kw>
+<kw name="Click the Search field" owner="ComputerService">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:46:55.210472" level="INFO">Clicking link 'css:div[class='column customer-service'] a[href='/search']'.</msg>
+<arg>${search}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T11:46:55.209458" elapsed="0.916402"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:46:55.203550" elapsed="0.922310"/>
+</kw>
+<kw name="Enter the product" owner="ComputerService">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:46:56.132580" level="INFO">Typing text 'computer' into text field 'css:input[name='q']'.</msg>
+<arg>${input_search}</arg>
+<arg>computer</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T11:46:56.130138" elapsed="0.259612"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:46:56.125860" elapsed="0.263890"/>
+</kw>
+<kw name="Click Search Button" owner="ComputerService">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:46:56.391821" level="INFO">Clicking element 'css:input[type='submit']'.</msg>
+<arg>${search_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T11:46:56.391821" elapsed="1.722097"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:46:56.390750" elapsed="1.723168"/>
+</kw>
+<kw name="Enter product in search keyword" owner="ComputerService">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:46:58.116911" level="INFO">Typing text 'computer' into text field 'css:input[class='search-text']'.</msg>
+<arg>css:input[class='search-text']</arg>
+<arg>computer</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T11:46:58.115921" elapsed="0.248073"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:46:58.114942" elapsed="0.250054"/>
+</kw>
+<kw name="Select the checkbox options Advance Search" owner="ComputerService">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:46:58.368998" level="INFO">Selecting checkbox 'id:As'.</msg>
+<arg>id:As</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T11:46:58.368998" elapsed="0.228258"/>
+</kw>
+<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:46:58.597256" level="INFO">Verifying checkbox 'id:As' is selected.</msg>
+<arg>id:As</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="PASS" start="2024-05-27T11:46:58.597256" elapsed="0.048492"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:46:58.367012" elapsed="0.279743"/>
+</kw>
+<kw name="Fill the details of Advance Search" owner="ComputerService">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:46:58.647749" level="INFO">Selecting options from selection list 'id:Cid' by value 2.</msg>
+<arg>id:Cid</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-05-27T11:46:58.647749" elapsed="0.152049"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:46:58.799798" level="INFO">Selecting checkbox 'id:Isc'.</msg>
+<arg>id:Isc</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T11:46:58.799798" elapsed="0.173570"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:46:58.973368" level="INFO">Selecting options from selection list 'id:Mid' by value 0.</msg>
+<arg>id:Mid</arg>
+<arg>0</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-05-27T11:46:58.973368" elapsed="0.109630"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:46:59.083996" level="INFO">Typing text '500' into text field 'css:input[class='price-from']'.</msg>
+<arg>css:input[class='price-from']</arg>
+<arg>500</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T11:46:59.083996" elapsed="0.220867"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:46:59.305927" level="INFO">Typing text '2000' into text field 'css:input[class='price-to']'.</msg>
+<arg>css:input[class='price-to']</arg>
+<arg>2000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T11:46:59.304863" elapsed="0.238021"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:46:58.646755" elapsed="0.896129"/>
+</kw>
+<kw name="Click search" owner="ComputerService">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:46:59.544948" level="INFO">Clicking button 'css:input[class='button-1 search-button']'.</msg>
+<arg>css:input[class='button-1 search-button']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T11:46:59.544948" elapsed="1.390522"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:46:59.543908" elapsed="1.391562"/>
+</kw>
+<kw name="List the Computers" owner="ComputerService">
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:47:00.980131" level="INFO">${count} = 4</msg>
+<var>${count}</var>
+<arg>${product_list}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-05-27T11:47:00.937756" elapsed="0.042375"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<msg time="2024-05-27T11:47:00.982676" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${count}</arg>
+<arg>4</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2024-05-27T11:47:00.982676" elapsed="0.001007"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:47:00.936729" elapsed="0.046954"/>
+</kw>
+<kw name="Close Browser session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-27T11:47:00.984723" elapsed="2.255256"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:47:00.984723" elapsed="2.255256"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:46:48.149742" elapsed="15.091231"/>
 </test>
-<test id="s1-s1-s2-t2" name="Validate for news field" line="29">
-<kw name="Open the Browser" type="SETUP">
-<msg time="2024-05-27T11:27:49.194774" level="FAIL">No keyword with name 'Open the Browser' found. Did you mean:
-    SeleniumLibrary.Open Browser</msg>
-<status status="FAIL" start="2024-05-27T11:27:49.194774" elapsed="0.000000">No keyword with name 'Open the Browser' found. Did you mean:
-    SeleniumLibrary.Open Browser</status>
+<test id="s1-s1-s2-t2" name="Validate for news field" line="30">
+<kw name="Open the Browser with url" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:47:03.247025" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-27T11:47:03.247025" elapsed="2.470797"/>
 </kw>
-<kw name="Close Browser Session" type="TEARDOWN">
-<msg time="2024-05-27T11:27:49.199805" level="FAIL">No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</msg>
-<status status="FAIL" start="2024-05-27T11:27:49.198786" elapsed="0.001019">No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:47:05.718817" level="INFO">Opening url 'https://demowebshop.tricentis.com'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-27T11:47:05.717822" elapsed="2.775532"/>
 </kw>
-<status status="FAIL" start="2024-05-27T11:27:49.190835" elapsed="0.010118">Setup failed:
-No keyword with name 'Open the Browser' found. Did you mean:
-    SeleniumLibrary.Open Browser
-
-Also teardown failed:
-No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-27T11:47:08.493354" elapsed="0.099570"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-27T11:47:08.593914" elapsed="0.002994"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:47:03.245974" elapsed="5.350934"/>
+</kw>
+<kw name="click the news field" owner="ComputerService">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:47:08.598910" level="INFO">Clicking link 'css:a[href='/news']'.</msg>
+<arg>${news}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T11:47:08.598910" elapsed="0.891103"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:47:09.491023" level="INFO">Verifying element 'xpath://div[@class='page-title']//child::h1' contains exact text 'News'.</msg>
+<arg>${news_assert}</arg>
+<arg>News</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-27T11:47:09.490013" elapsed="0.084953"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:47:08.597911" elapsed="0.977055"/>
+</kw>
+<kw name="click details in news" owner="ComputerService">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:47:09.577976" level="INFO">Clicking link '//a[normalize-space()='details' and @href='/new-online-store-is-open']'.</msg>
+<arg>//a[normalize-space()='details' and @href='/new-online-store-is-open']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T11:47:09.575967" elapsed="9.223618"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:47:09.575967" elapsed="9.223618"/>
+</kw>
+<kw name="Fill the title" owner="ComputerService">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:47:18.800689" level="INFO">Typing text 'hai' into text field '//input[@id='AddNewComment_CommentTitle']'.</msg>
+<arg>//input[@id='AddNewComment_CommentTitle']</arg>
+<arg>hai</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T11:47:18.800689" elapsed="0.246803"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:47:18.800689" elapsed="0.246803"/>
+</kw>
+<kw name="Fill the Comment" owner="ComputerService">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:47:19.048500" level="INFO">Typing text 'I love red color,yercaurd and my home' into text field '//textarea[@id='AddNewComment_CommentText']'.</msg>
+<arg>//textarea[@id='AddNewComment_CommentText']</arg>
+<arg>I love red color,yercaurd and my home</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T11:47:19.048500" elapsed="0.340574"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:47:19.048500" elapsed="0.340574"/>
+</kw>
+<kw name="Click new comment" owner="ComputerService">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:47:19.390074" level="INFO">Clicking element '//input[@class='button-1 news-item-add-comment-button']'.</msg>
+<arg>//input[@class='button-1 news-item-add-comment-button']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T11:47:19.390074" elapsed="10.988848"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:47:19.390074" elapsed="10.988848"/>
+</kw>
+<kw name="Close Browser session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-27T11:47:30.380920" elapsed="2.218301"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:47:30.380054" elapsed="2.219167"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:47:03.244972" elapsed="29.355324"/>
 </test>
-<test id="s1-s1-s2-t3" name="Validate the blog field" line="35">
-<kw name="Open the Browser" type="SETUP">
-<msg time="2024-05-27T11:27:49.206991" level="FAIL">No keyword with name 'Open the Browser' found. Did you mean:
-    SeleniumLibrary.Open Browser</msg>
-<status status="FAIL" start="2024-05-27T11:27:49.206991" elapsed="0.000989">No keyword with name 'Open the Browser' found. Did you mean:
-    SeleniumLibrary.Open Browser</status>
+<test id="s1-s1-s2-t3" name="Validate the blog field" line="37">
+<kw name="Open the Browser with url" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:47:32.605969" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-27T11:47:32.605969" elapsed="2.519394"/>
 </kw>
-<kw name="Close Browser Session" type="TEARDOWN">
-<msg time="2024-05-27T11:27:49.214297" level="FAIL">No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</msg>
-<status status="FAIL" start="2024-05-27T11:27:49.213318" elapsed="0.000979">No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:47:35.127377" level="INFO">Opening url 'https://demowebshop.tricentis.com'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-27T11:47:35.125363" elapsed="2.863822"/>
 </kw>
-<status status="FAIL" start="2024-05-27T11:27:49.204975" elapsed="0.009322">Setup failed:
-No keyword with name 'Open the Browser' found. Did you mean:
-    SeleniumLibrary.Open Browser
-
-Also teardown failed:
-No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-27T11:47:37.990184" elapsed="0.077003"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-27T11:47:38.067187" elapsed="0.003994"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:47:32.604968" elapsed="5.466213"/>
+</kw>
+<kw name="Click the blog field" owner="ComputerService">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:47:38.074181" level="INFO">Clicking link 'css:a[href='/blog']'.</msg>
+<arg>${blogs}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T11:47:38.073184" elapsed="0.902916"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:47:38.977095" level="INFO">Verifying element 'xpath://div[@class='page-title']//child::h1' contains exact text 'Blog'.</msg>
+<arg>${blog_assert}</arg>
+<arg>Blog</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-27T11:47:38.976100" elapsed="0.052180"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:47:38.072181" elapsed="0.956099"/>
+</kw>
+<kw name="Blog Title" owner="ComputerService">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:47:39.030395" level="INFO">Verifying element 'xpath://a[text()='Customer Service - Client Service']' contains exact text 'Customer Service - Client Service'.</msg>
+<arg>${blog_title}</arg>
+<arg>Customer Service - Client Service</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-27T11:47:39.029281" elapsed="0.045533"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:47:39.029281" elapsed="0.045533"/>
+</kw>
+<kw name="Blog Links" owner="ComputerService">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:47:39.077809" level="INFO">Clicking link '//ul[@class='tags']//a[text()='e-commerce']'.</msg>
+<arg>//ul[@class='tags']//a[text()='e-commerce']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T11:47:39.076827" elapsed="1.196749"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:47:40.274613" level="INFO">Verifying element 'xpath://div[@class='page-title']//child::h1' contains exact text 'Blog posts tagged with 'e-commerce''.</msg>
+<arg>${blog_link}</arg>
+<arg>Blog posts tagged with 'e-commerce'</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-27T11:47:40.273576" elapsed="0.053093"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:47:39.075814" elapsed="1.251853"/>
+</kw>
+<kw name="Close Browser session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-27T11:47:40.329665" elapsed="2.238711"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:47:40.328664" elapsed="2.239712"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:47:32.602969" elapsed="9.966406"/>
+</test>
+<test id="s1-s1-s2-t4" name="Validate recently viewed products" line="42">
+<kw name="Open the Browser with url" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:47:42.578099" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-27T11:47:42.577082" elapsed="3.098224"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:47:45.675306" level="INFO">Opening url 'https://demowebshop.tricentis.com'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-27T11:47:45.675306" elapsed="3.024349"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-27T11:47:48.700670" elapsed="0.100944"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-27T11:47:48.802609" elapsed="0.004015"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:47:42.575086" elapsed="6.231538"/>
+</kw>
+<kw name="Validate Recently viewed products" owner="ComputerService">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:47:48.819610" level="INFO">Clicking link '//a[@href='/recentlyviewedproducts']'.</msg>
+<arg>${RECENTLY_VIEWED_LINK}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T11:47:48.816625" elapsed="0.698462"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-27T11:47:49.516072" level="INFO">Verifying element '//div[@class='page-title']//child::h1' contains exact text 'Recently viewed products'.</msg>
+<arg>${recently_viewed_assert}</arg>
+<arg>Recently viewed products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-27T11:47:49.516072" elapsed="0.041450"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:47:48.809675" elapsed="0.747847"/>
+</kw>
+<kw name="Close Browser session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-27T11:47:49.559519" elapsed="2.303897"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:47:49.558560" elapsed="2.305793"/>
+</kw>
+<status status="PASS" start="2024-05-27T11:47:42.572084" elapsed="9.292595"/>
 </test>
 <doc>Tests to validate Computer service</doc>
-<status status="FAIL" start="2024-05-27T11:27:49.137780" elapsed="0.083648"/>
+<status status="PASS" start="2024-05-27T11:46:48.043273" elapsed="63.824003"/>
 </suite>
-<status status="FAIL" start="2024-05-27T11:27:48.620078" elapsed="0.605338"/>
+<status status="FAIL" start="2024-05-27T11:43:08.026197" elapsed="283.846175"/>
 </suite>
-<status status="FAIL" start="2024-05-27T11:27:48.588754" elapsed="0.639663"/>
+<status status="FAIL" start="2024-05-27T11:43:07.829485" elapsed="284.050981"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="6" skip="0">All Tests</stat>
+<stat pass="9" fail="10" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="6" skip="0" id="s1" name="Final Project">Final Project</stat>
-<stat pass="0" fail="6" skip="0" id="s1-s1" name="TestCases">Final Project.TestCases</stat>
-<stat pass="0" fail="3" skip="0" id="s1-s1-s1" name="Test Computers">Final Project.TestCases.Test Computers</stat>
-<stat pass="0" fail="3" skip="0" id="s1-s1-s2" name="Test Computerservice">Final Project.TestCases.Test Computerservice</stat>
+<stat pass="9" fail="10" skip="0" id="s1" name="Final Project">Final Project</stat>
+<stat pass="9" fail="10" skip="0" id="s1-s1" name="TestCases">Final Project.TestCases</stat>
+<stat pass="5" fail="10" skip="0" id="s1-s1-s1" name="Test Computers">Final Project.TestCases.Test Computers</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1-s2" name="Test Computerservice">Final Project.TestCases.Test Computerservice</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2024-05-27T11:27:49.096782" level="ERROR">Error in file 'D:\final_project\TestCases\Test_Computers.robot' on line 6: Resource file '..\Resources\GenericResources.robot' does not exist.</msg>
-<msg time="2024-05-27T11:27:49.155775" level="ERROR">Error in file 'D:\final_project\TestCases\Test_Computerservice.robot' on line 6: Resource file '..\Resources\GenericResources.robot' does not exist.</msg>
+<msg time="2024-05-27T11:44:41.298807" level="WARN">Multiple tests with name 'Sort by order by for desktop' executed in suite 'Final Project.TestCases.Test Computers'.</msg>
+<msg time="2024-05-27T11:44:58.655752" level="WARN">Multiple tests with name 'Sort by pagesize for desktop' executed in suite 'Final Project.TestCases.Test Computers'.</msg>
+<msg time="2024-05-27T11:45:14.313924" level="WARN">Multiple tests with name 'Sort by viewmode for desktop' executed in suite 'Final Project.TestCases.Test Computers'.</msg>
+<msg time="2024-05-27T11:45:28.133581" level="WARN">Multiple tests with name 'Click the product for desktop' executed in suite 'Final Project.TestCases.Test Computers'.</msg>
+<msg time="2024-05-27T11:45:50.947074" level="WARN">Multiple tests with name 'Sort by order by for desktop' executed in suite 'Final Project.TestCases.Test Computers'.</msg>
+<msg time="2024-05-27T11:46:06.254419" level="WARN">Multiple tests with name 'Sort by pagesize for desktop' executed in suite 'Final Project.TestCases.Test Computers'.</msg>
+<msg time="2024-05-27T11:46:20.027558" level="WARN">Multiple tests with name 'Sort by viewmode for desktop' executed in suite 'Final Project.TestCases.Test Computers'.</msg>
+<msg time="2024-05-27T11:46:34.454263" level="WARN">Multiple tests with name 'Click the product for desktop' executed in suite 'Final Project.TestCases.Test Computers'.</msg>
 </errors>
 </robot>
