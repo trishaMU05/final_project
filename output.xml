@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-27T11:27:48.585794" rpa="false" schemaversion="5">
+<suite id="s1" name="Final Project" source="D:\final_project">
+<suite id="s1-s1" name="TestCases" source="D:\final_project\TestCases">
+<suite id="s1-s1-s1" name="Test Computers" source="D:\final_project\TestCases\Test_Computers.robot">
+<test id="s1-s1-s1-t1" name="Select the Desktops from computers" line="11">
+<kw name="open the browser" type="SETUP">
+<msg time="2024-05-27T11:27:49.108107" level="FAIL">No keyword with name 'open the browser' found. Did you mean:
+    SeleniumLibrary.Open Browser</msg>
+<status status="FAIL" start="2024-05-27T11:27:49.108107" elapsed="0.000000">No keyword with name 'open the browser' found. Did you mean:
+    SeleniumLibrary.Open Browser</status>
+</kw>
+<kw name="Close Browser Session" type="TEARDOWN">
+<msg time="2024-05-27T11:27:49.110115" level="FAIL">No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</msg>
+<status status="FAIL" start="2024-05-27T11:27:49.110115" elapsed="0.000000">No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<status status="FAIL" start="2024-05-27T11:27:49.105179" elapsed="0.004936">Setup failed:
+No keyword with name 'open the browser' found. Did you mean:
+    SeleniumLibrary.Open Browser
+
+Also teardown failed:
+No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<test id="s1-s1-s1-t2" name="Select the Notebooks from computers" line="14">
+<kw name="open the browser" type="SETUP">
+<msg time="2024-05-27T11:27:49.114117" level="FAIL">No keyword with name 'open the browser' found. Did you mean:
+    SeleniumLibrary.Open Browser</msg>
+<status status="FAIL" start="2024-05-27T11:27:49.113116" elapsed="0.001001">No keyword with name 'open the browser' found. Did you mean:
+    SeleniumLibrary.Open Browser</status>
+</kw>
+<kw name="Close Browser Session" type="TEARDOWN">
+<msg time="2024-05-27T11:27:49.116116" level="FAIL">No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</msg>
+<status status="FAIL" start="2024-05-27T11:27:49.116116" elapsed="0.000000">No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<status status="FAIL" start="2024-05-27T11:27:49.112119" elapsed="0.003997">Setup failed:
+No keyword with name 'open the browser' found. Did you mean:
+    SeleniumLibrary.Open Browser
+
+Also teardown failed:
+No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<test id="s1-s1-s1-t3" name="Select the Accessories from computers" line="17">
+<kw name="open the browser" type="SETUP">
+<msg time="2024-05-27T11:27:49.124772" level="FAIL">No keyword with name 'open the browser' found. Did you mean:
+    SeleniumLibrary.Open Browser</msg>
+<status status="FAIL" start="2024-05-27T11:27:49.124772" elapsed="0.000000">No keyword with name 'open the browser' found. Did you mean:
+    SeleniumLibrary.Open Browser</status>
+</kw>
+<kw name="Close Browser Session" type="TEARDOWN">
+<msg time="2024-05-27T11:27:49.127771" level="FAIL">No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</msg>
+<status status="FAIL" start="2024-05-27T11:27:49.127771" elapsed="0.000000">No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<status status="FAIL" start="2024-05-27T11:27:49.121118" elapsed="0.006653">Setup failed:
+No keyword with name 'open the browser' found. Did you mean:
+    SeleniumLibrary.Open Browser
+
+Also teardown failed:
+No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<doc>Tests to validate Computer dropdowns</doc>
+<status status="FAIL" start="2024-05-27T11:27:48.622083" elapsed="0.509692"/>
+</suite>
+<suite id="s1-s1-s2" name="Test Computerservice" source="D:\final_project\TestCases\Test_Computerservice.robot">
+<test id="s1-s1-s2-t1" name="Validate Search Field" line="12">
+<kw name="Open the Browser" type="SETUP">
+<msg time="2024-05-27T11:27:49.175858" level="FAIL">No keyword with name 'Open the Browser' found. Did you mean:
+    SeleniumLibrary.Open Browser</msg>
+<status status="FAIL" start="2024-05-27T11:27:49.175858" elapsed="0.000000">No keyword with name 'Open the Browser' found. Did you mean:
+    SeleniumLibrary.Open Browser</status>
+</kw>
+<kw name="Close Browser Session" type="TEARDOWN">
+<msg time="2024-05-27T11:27:49.182783" level="FAIL">No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</msg>
+<status status="FAIL" start="2024-05-27T11:27:49.182783" elapsed="0.001003">No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<status status="FAIL" start="2024-05-27T11:27:49.172773" elapsed="0.014039">Setup failed:
+No keyword with name 'Open the Browser' found. Did you mean:
+    SeleniumLibrary.Open Browser
+
+Also teardown failed:
+No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<test id="s1-s1-s2-t2" name="Validate for news field" line="29">
+<kw name="Open the Browser" type="SETUP">
+<msg time="2024-05-27T11:27:49.194774" level="FAIL">No keyword with name 'Open the Browser' found. Did you mean:
+    SeleniumLibrary.Open Browser</msg>
+<status status="FAIL" start="2024-05-27T11:27:49.194774" elapsed="0.000000">No keyword with name 'Open the Browser' found. Did you mean:
+    SeleniumLibrary.Open Browser</status>
+</kw>
+<kw name="Close Browser Session" type="TEARDOWN">
+<msg time="2024-05-27T11:27:49.199805" level="FAIL">No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</msg>
+<status status="FAIL" start="2024-05-27T11:27:49.198786" elapsed="0.001019">No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<status status="FAIL" start="2024-05-27T11:27:49.190835" elapsed="0.010118">Setup failed:
+No keyword with name 'Open the Browser' found. Did you mean:
+    SeleniumLibrary.Open Browser
+
+Also teardown failed:
+No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<test id="s1-s1-s2-t3" name="Validate the blog field" line="35">
+<kw name="Open the Browser" type="SETUP">
+<msg time="2024-05-27T11:27:49.206991" level="FAIL">No keyword with name 'Open the Browser' found. Did you mean:
+    SeleniumLibrary.Open Browser</msg>
+<status status="FAIL" start="2024-05-27T11:27:49.206991" elapsed="0.000989">No keyword with name 'Open the Browser' found. Did you mean:
+    SeleniumLibrary.Open Browser</status>
+</kw>
+<kw name="Close Browser Session" type="TEARDOWN">
+<msg time="2024-05-27T11:27:49.214297" level="FAIL">No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</msg>
+<status status="FAIL" start="2024-05-27T11:27:49.213318" elapsed="0.000979">No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<status status="FAIL" start="2024-05-27T11:27:49.204975" elapsed="0.009322">Setup failed:
+No keyword with name 'Open the Browser' found. Did you mean:
+    SeleniumLibrary.Open Browser
+
+Also teardown failed:
+No keyword with name 'Close Browser Session' found. Did you try using keyword 'SeleniumLibrary.Close Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<doc>Tests to validate Computer service</doc>
+<status status="FAIL" start="2024-05-27T11:27:49.137780" elapsed="0.083648"/>
+</suite>
+<status status="FAIL" start="2024-05-27T11:27:48.620078" elapsed="0.605338"/>
+</suite>
+<status status="FAIL" start="2024-05-27T11:27:48.588754" elapsed="0.639663"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="6" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="6" skip="0" id="s1" name="Final Project">Final Project</stat>
+<stat pass="0" fail="6" skip="0" id="s1-s1" name="TestCases">Final Project.TestCases</stat>
+<stat pass="0" fail="3" skip="0" id="s1-s1-s1" name="Test Computers">Final Project.TestCases.Test Computers</stat>
+<stat pass="0" fail="3" skip="0" id="s1-s1-s2" name="Test Computerservice">Final Project.TestCases.Test Computerservice</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-27T11:27:49.096782" level="ERROR">Error in file 'D:\final_project\TestCases\Test_Computers.robot' on line 6: Resource file '..\Resources\GenericResources.robot' does not exist.</msg>
+<msg time="2024-05-27T11:27:49.155775" level="ERROR">Error in file 'D:\final_project\TestCases\Test_Computerservice.robot' on line 6: Resource file '..\Resources\GenericResources.robot' does not exist.</msg>
+</errors>
+</robot>
