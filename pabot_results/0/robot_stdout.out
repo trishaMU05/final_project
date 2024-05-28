@@ -1,0 +1,23 @@
+==============================================================================
+Final Project                                                                 
+==============================================================================
+Final Project.TestCases                                                       
+==============================================================================
+Final Project.TestCases.Test Computers :: Tests to validate Computer dropdowns
+==============================================================================
+Select the Desktops from computers                                    | PASS |
+------------------------------------------------------------------------------
+Select the Notebooks from computers                                   | PASS |
+------------------------------------------------------------------------------
+Select the Accessories from computers                                 | PASS |
+------------------------------------------------------------------------------
+Final Project.TestCases.Test Computers :: Tests to validate Comput... | PASS |
+3 tests, 3 passed, 0 failed
+==============================================================================
+Final Project.TestCases                                               | PASS |
+3 tests, 3 passed, 0 failed
+==============================================================================
+Final Project                                                         | PASS |
+3 tests, 3 passed, 0 failed
+==============================================================================
+Output:  D:\final_project\pabot_results\0\output.xml

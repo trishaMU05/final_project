@@ -15,18 +15,17 @@ ${blogs}         css:a[href='/blog']
 ${blog_assert}   xpath://div[@class='page-title']//child::h1
 ${blog_title}    xpath://a[text()='Customer Service - Client Service']
 ${blog_link}    xpath://div[@class='page-title']//child::h1
-
-${RECENTLY_VIEWED_SECTION}    //div[@class="recently-viewed-products"]
-${PRODUCT}            .//div[@class="product"]
-${PRODUCT_NAME}       .//h2[@class="product-name"]
-${PRODUCT_PRICE}      .//span[@class="product-price"]
-${PRODUCT_LINK}       .//a
-
-
+${compare_product}    xpath://a[text()='Compare products list'] 
+${compare_assert}    xpath://div[@class='page-title']//child::h1   
 ${RECENTLY_VIEWED_LINK}       //a[@href='/recentlyviewedproducts']
 ${recently_viewed_assert}    //div[@class='page-title']//child::h1
-
-
+${new_products}    xpath://a[text()='New products']
+${new_products_assert}    xpath://div[@class='page-title']//child::h1
+${button_empty_search}    xpath://input[@value='Search']
+${warning_minimum}          xpath://div[@class='search-results']//child::strong
+${warning_invalid}        xpath://strong[@class='result']
+${log_out_button}         xpath://a[@class='ico-logout']
+${logout_aseert}          xpath://a[@class='ico-register']
 *** Keywords ***
 Click the Search field
     Click Link    ${search}
@@ -86,23 +85,34 @@ Blog Links
     Click Link    //ul[@class='tags']//a[text()='e-commerce']
     Element Text Should Be     ${blog_link}     Blog posts tagged with 'e-commerce'        
 
-Validate Recently viewed products 1
-    ${recently_viewed_products}=    Get WebElements    ${RECENTLY_VIEWED_SECTION}${PRODUCT}
-    ${product_count}=    Get Length    ${recently_viewed_products}
-    Log    Found ${product_count} recently viewed products
-    FOR    ${product}    IN    @{recently_viewed_products}
-        ${product_name}=    Get Text    ${product}${PRODUCT_NAME}
-        ${product_price}=    Get Text    ${product}${PRODUCT_PRICE}
-        ${product_link}=    Get Element Attribute    ${product}${PRODUCT_LINK}    href
-        Log    Product Name: ${product_name}
-        Log    Product Price: ${product_price}
-        Log    Product Link: ${product_link}
-    END
-    Close Browser
-
 Validate Recently viewed products
      Click Link    ${RECENTLY_VIEWED_LINK}
      Element Text Should Be   ${recently_viewed_assert}    Recently viewed products
 
+Validate for comparing product
+    Click Link    ${compare_product}
+    Element Text Should Be    ${compare_assert}     Compare products
 
- 
+Validate for new products
+    Click Link    ${new_products} 
+    Element Text Should Be    ${new_products_assert}    New products
+
+Validate for empty search product
+    Click Button  ${button_empty_search} 
+    Alert Should Be Present    
+
+Enter the product for minimum
+    Input Text    ${input_search}    12 
+
+Assert for minimum search
+    Element Text Should Be    ${warning_minimum}   Search term minimum length is 3 characters
+
+Enter the product for invalid 
+    Input Text    ${input_search}    chocho         
+
+Assert for invalid search  
+     Element Text Should Be    ${warning_invalid}     No products were found that matched your criteria.
+                
+Click log out button
+     Click Link    ${log_out_button} 
+     Element Text Should Be    ${logout_aseert}     Register  

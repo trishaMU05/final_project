@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-28T09:47:48.690588" rpa="false" schemaversion="5">
+<suite id="s1" name="Final Project" source="D:\final_project">
+<suite id="s1-s1" name="TestCases" source="D:\final_project\TestCases">
+<suite id="s1-s1-s1" name="Test Computerservice" source="D:\final_project\TestCases\Test_Computerservice.robot">
+<test id="s1-s1-s1-t1" name="Validate Search Field" line="12">
+<kw name="Open the Browser with url" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-28T09:47:49.395536" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-28T09:47:49.395536" elapsed="7.235702"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-28T09:47:56.639252" level="INFO">Opening url 'https://demowebshop.tricentis.com'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-28T09:47:56.637251" elapsed="4.763844"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-28T09:48:01.402100" elapsed="0.207940"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-28T09:48:01.611088" elapsed="0.006972"/>
+</kw>
+<status status="PASS" start="2024-05-28T09:47:49.393529" elapsed="12.224531"/>
+</kw>
+<kw name="Click the Search field" owner="ComputerService">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-28T09:48:01.624066" level="INFO">Clicking link 'css:div[class='column customer-service'] a[href='/search']'.</msg>
+<arg>${search}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T09:48:01.621059" elapsed="0.967896"/>
+</kw>
+<status status="PASS" start="2024-05-28T09:48:01.619055" elapsed="0.970851"/>
+</kw>
+<kw name="Enter the product" owner="ComputerService">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T09:48:02.592906" level="INFO">Typing text 'computer' into text field 'css:input[name='q']'.</msg>
+<arg>${input_search}</arg>
+<arg>computer</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T09:48:02.591905" elapsed="0.387487"/>
+</kw>
+<status status="PASS" start="2024-05-28T09:48:02.590904" elapsed="0.389516"/>
+</kw>
+<kw name="Click Search Button" owner="ComputerService">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-28T09:48:02.982452" level="INFO">Clicking element 'css:input[type='submit']'.</msg>
+<arg>${search_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T09:48:02.981427" elapsed="0.963538"/>
+</kw>
+<status status="PASS" start="2024-05-28T09:48:02.980420" elapsed="0.965560"/>
+</kw>
+<kw name="Enter product in search keyword" owner="ComputerService">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T09:48:03.952070" level="INFO">Typing text 'computer' into text field 'css:input[class='search-text']'.</msg>
+<arg>css:input[class='search-text']</arg>
+<arg>computer</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T09:48:03.950044" elapsed="0.165342"/>
+</kw>
+<status status="PASS" start="2024-05-28T09:48:03.946962" elapsed="0.169420"/>
+</kw>
+<kw name="Select the checkbox options Advance Search" owner="ComputerService">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-05-28T09:48:04.118374" level="INFO">Selecting checkbox 'id:As'.</msg>
+<arg>id:As</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T09:48:04.117324" elapsed="0.202392"/>
+</kw>
+<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
+<msg time="2024-05-28T09:48:04.322723" level="INFO">Verifying checkbox 'id:As' is selected.</msg>
+<arg>id:As</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="PASS" start="2024-05-28T09:48:04.320733" elapsed="0.090267"/>
+</kw>
+<status status="PASS" start="2024-05-28T09:48:04.116382" elapsed="0.294618"/>
+</kw>
+<kw name="Fill the details of Advance Search" owner="ComputerService">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-05-28T09:48:04.412976" level="INFO">Selecting options from selection list 'id:Cid' by value 2.</msg>
+<arg>id:Cid</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-05-28T09:48:04.412976" elapsed="0.148189"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-05-28T09:48:04.563164" level="INFO">Selecting checkbox 'id:Isc'.</msg>
+<arg>id:Isc</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T09:48:04.562163" elapsed="0.134201"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-05-28T09:48:04.697364" level="INFO">Selecting options from selection list 'id:Mid' by value 0.</msg>
+<arg>id:Mid</arg>
+<arg>0</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-05-28T09:48:04.696364" elapsed="0.079053"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T09:48:04.776967" level="INFO">Typing text '500' into text field 'css:input[class='price-from']'.</msg>
+<arg>css:input[class='price-from']</arg>
+<arg>500</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T09:48:04.775958" elapsed="0.125696"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T09:48:04.903671" level="INFO">Typing text '2000' into text field 'css:input[class='price-to']'.</msg>
+<arg>css:input[class='price-to']</arg>
+<arg>2000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T09:48:04.902697" elapsed="0.151760"/>
+</kw>
+<status status="PASS" start="2024-05-28T09:48:04.411997" elapsed="0.643470"/>
+</kw>
+<kw name="Click search" owner="ComputerService">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-28T09:48:05.057483" level="INFO">Clicking button 'css:input[class='button-1 search-button']'.</msg>
+<arg>css:input[class='button-1 search-button']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T09:48:05.057483" elapsed="0.881662"/>
+</kw>
+<status status="PASS" start="2024-05-28T09:48:05.056511" elapsed="0.883632"/>
+</kw>
+<kw name="List the Computers" owner="ComputerService">
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-05-28T09:48:05.975252" level="INFO">${count} = 4</msg>
+<var>${count}</var>
+<arg>${product_list}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-05-28T09:48:05.942372" elapsed="0.032880"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<msg time="2024-05-28T09:48:05.976249" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${count}</arg>
+<arg>4</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2024-05-28T09:48:05.975252" elapsed="0.000997"/>
+</kw>
+<status status="PASS" start="2024-05-28T09:48:05.940143" elapsed="0.037105"/>
+</kw>
+<kw name="Close Browser session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-28T09:48:05.978253" elapsed="2.443871"/>
+</kw>
+<status status="PASS" start="2024-05-28T09:48:05.978253" elapsed="2.444878"/>
+</kw>
+<status status="PASS" start="2024-05-28T09:47:49.392528" elapsed="19.030603"/>
+</test>
+<test id="s1-s1-s1-t2" name="Validate for news field" line="30">
+<kw name="Open the Browser with url" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-28T09:48:08.467865" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-28T09:48:08.467865" elapsed="4.795729"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-28T09:48:13.280654" level="INFO">Opening url 'https://demowebshop.tricentis.com'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-28T09:48:13.278648" elapsed="6.100882"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-28T09:48:19.380528" elapsed="0.078047"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-28T09:48:19.459710" elapsed="0.005872"/>
+</kw>
+<status status="PASS" start="2024-05-28T09:48:08.464847" elapsed="11.002739"/>
+</kw>
+<kw name="click the news field" owner="ComputerService">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-28T09:48:19.470583" level="INFO">Clicking link 'css:a[href='/news']'.</msg>
+<arg>${news}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T09:48:19.470583" elapsed="0.952765"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-28T09:48:20.432342" level="INFO">Verifying element 'xpath://div[@class='page-title']//child::h1' contains exact text 'News'.</msg>
+<arg>${news_assert}</arg>
+<arg>News</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-28T09:48:20.428346" elapsed="0.116082"/>
+</kw>
+<status status="PASS" start="2024-05-28T09:48:19.469584" elapsed="1.074844"/>
+</kw>
+<kw name="click details in news" owner="ComputerService">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-28T09:48:20.547425" level="INFO">Clicking link '//a[normalize-space()='details' and @href='/new-online-store-is-open']'.</msg>
+<arg>//a[normalize-space()='details' and @href='/new-online-store-is-open']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T09:48:20.546427" elapsed="8.696750"/>
+</kw>
+<status status="PASS" start="2024-05-28T09:48:20.545440" elapsed="8.697737"/>
+</kw>
+<kw name="Fill the title" owner="ComputerService">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T09:48:29.247181" level="INFO">Typing text 'hai' into text field '//input[@id='AddNewComment_CommentTitle']'.</msg>
+<arg>//input[@id='AddNewComment_CommentTitle']</arg>
+<arg>hai</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T09:48:29.246182" elapsed="0.350827"/>
+</kw>
+<status status="PASS" start="2024-05-28T09:48:29.244179" elapsed="0.353346"/>
+</kw>
+<kw name="Fill the Comment" owner="ComputerService">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T09:48:29.599845" level="INFO">Typing text 'I love red color,yercaurd and my home' into text field '//textarea[@id='AddNewComment_CommentText']'.</msg>
+<arg>//textarea[@id='AddNewComment_CommentText']</arg>
+<arg>I love red color,yercaurd and my home</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T09:48:29.598831" elapsed="0.317908"/>
+</kw>
+<status status="PASS" start="2024-05-28T09:48:29.597525" elapsed="0.320212"/>
+</kw>
+<kw name="Click new comment" owner="ComputerService">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-28T09:48:29.919736" level="INFO">Clicking element '//input[@class='button-1 news-item-add-comment-button']'.</msg>
+<arg>//input[@class='button-1 news-item-add-comment-button']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T09:48:29.919736" elapsed="8.827135"/>
+</kw>
+<status status="PASS" start="2024-05-28T09:48:29.918739" elapsed="8.829132"/>
+</kw>
+<kw name="Close Browser session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-28T09:48:38.751827" elapsed="2.597923"/>
+</kw>
+<status status="PASS" start="2024-05-28T09:48:38.750812" elapsed="2.600940"/>
+</kw>
+<status status="PASS" start="2024-05-28T09:48:08.461853" elapsed="32.889899"/>
+</test>
+<test id="s1-s1-s1-t3" name="Validate the blog field" line="37">
+<kw name="Open the Browser with url" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-28T09:48:41.355306" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-28T09:48:41.355306" elapsed="2.568742"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-28T09:48:43.926058" level="INFO">Opening url 'https://demowebshop.tricentis.com'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-28T09:48:43.925046" elapsed="3.394960"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-28T09:48:47.321202" elapsed="0.073685"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-28T09:48:47.395890" elapsed="0.003523"/>
+</kw>
+<status status="PASS" start="2024-05-28T09:48:41.354303" elapsed="6.045110"/>
+</kw>
+<kw name="Click the blog field" owner="ComputerService">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-28T09:48:47.404741" level="INFO">Clicking link 'css:a[href='/blog']'.</msg>
+<arg>${blogs}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T09:48:47.403745" elapsed="1.411000"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-28T09:48:48.815811" level="INFO">Verifying element 'xpath://div[@class='page-title']//child::h1' contains exact text 'Blog'.</msg>
+<arg>${blog_assert}</arg>
+<arg>Blog</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-28T09:48:48.814745" elapsed="0.049073"/>
+</kw>
+<status status="PASS" start="2024-05-28T09:48:47.401726" elapsed="1.462092"/>
+</kw>
+<kw name="Blog Title" owner="ComputerService">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-28T09:48:48.864820" level="INFO">Verifying element 'xpath://a[text()='Customer Service - Client Service']' contains exact text 'Customer Service - Client Service'.</msg>
+<arg>${blog_title}</arg>
+<arg>Customer Service - Client Service</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-28T09:48:48.864820" elapsed="0.029435"/>
+</kw>
+<status status="PASS" start="2024-05-28T09:48:48.863818" elapsed="0.030437"/>
+</kw>
+<kw name="Blog Links" owner="ComputerService">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-28T09:48:48.896256" level="INFO">Clicking link '//ul[@class='tags']//a[text()='e-commerce']'.</msg>
+<arg>//ul[@class='tags']//a[text()='e-commerce']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T09:48:48.896256" elapsed="0.577085"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-28T09:48:49.477181" level="INFO">Verifying element 'xpath://div[@class='page-title']//child::h1' contains exact text 'Blog posts tagged with 'e-commerce''.</msg>
+<arg>${blog_link}</arg>
+<arg>Blog posts tagged with 'e-commerce'</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-28T09:48:49.475373" elapsed="0.036916"/>
+</kw>
+<status status="PASS" start="2024-05-28T09:48:48.895255" elapsed="0.617034"/>
+</kw>
+<kw name="Close Browser session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-28T09:48:49.514308" elapsed="2.314477"/>
+</kw>
+<status status="PASS" start="2024-05-28T09:48:49.513282" elapsed="2.316587"/>
+</kw>
+<status status="PASS" start="2024-05-28T09:48:41.353286" elapsed="10.476583"/>
+</test>
+<test id="s1-s1-s1-t4" name="Validate recently viewed products" line="42">
+<kw name="Open the Browser with url" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-28T09:48:51.836919" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-28T09:48:51.835894" elapsed="2.460077"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-28T09:48:54.296926" level="INFO">Opening url 'https://demowebshop.tricentis.com'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-28T09:48:54.296926" elapsed="3.286493"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-28T09:48:57.583419" elapsed="0.061319"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-28T09:48:57.645735" elapsed="0.003005"/>
+</kw>
+<status status="PASS" start="2024-05-28T09:48:51.834372" elapsed="5.815386"/>
+</kw>
+<kw name="Validate Recently viewed products" owner="ComputerService">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-28T09:48:57.653802" level="INFO">Clicking link '//a[@href='/recentlyviewedproducts']'.</msg>
+<arg>${RECENTLY_VIEWED_LINK}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T09:48:57.652279" elapsed="0.727091"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-28T09:48:58.381367" level="INFO">Verifying element '//div[@class='page-title']//child::h1' contains exact text 'Recently viewed products'.</msg>
+<arg>${recently_viewed_assert}</arg>
+<arg>Recently viewed products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-28T09:48:58.380373" elapsed="0.047814"/>
+</kw>
+<status status="PASS" start="2024-05-28T09:48:57.649758" elapsed="0.779480"/>
+</kw>
+<kw name="Close Browser session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-28T09:48:58.429238" elapsed="3.355604"/>
+</kw>
+<status status="PASS" start="2024-05-28T09:48:58.429238" elapsed="3.356650"/>
+</kw>
+<status status="PASS" start="2024-05-28T09:48:51.830832" elapsed="9.956006"/>
+</test>
+<doc>Tests to validate Computer service</doc>
+<status status="PASS" start="2024-05-28T09:47:48.744720" elapsed="73.049159"/>
+</suite>
+<status status="PASS" start="2024-05-28T09:47:48.742433" elapsed="73.057233"/>
+</suite>
+<status status="PASS" start="2024-05-28T09:47:48.713675" elapsed="73.089297"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Final Project">Final Project</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1" name="TestCases">Final Project.TestCases</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1-s1" name="Test Computerservice">Final Project.TestCases.Test Computerservice</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
