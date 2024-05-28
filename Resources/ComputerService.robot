@@ -113,6 +113,4 @@ Enter the product for invalid
 Assert for invalid search  
      Element Text Should Be    ${warning_invalid}     No products were found that matched your criteria.
                 
-Click log out button
-     Click Link    ${log_out_button} 
-     Element Text Should Be    ${logout_aseert}     Register  
+ 

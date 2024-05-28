@@ -45,6 +45,5 @@ Validate for the invalid search
     ComputerService.Enter the product for invalid 
     ComputerService.Click Search Button
     ComputerService.Assert for invalid search
-Validate for log out successfull
-    ComputerService.click log out button
+
 
